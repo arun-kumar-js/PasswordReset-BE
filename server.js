@@ -1,6 +1,7 @@
 const app = require("./app");
 const mongoose = require("mongoose");
 const { MONGODB_URI, PORT } = require("./utils/config");
+const cors = require("cors");
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
